@@ -133,7 +133,7 @@ function timeConvert(seconds)
 		retunr "no data";
 	else
 		hours = string.format("%02.f", math.floor(seconds/3600));
-		mins = string.format("%02.f", math.floot(seconds/60 - (hours*60));
+		mins = string.format("%02.f", math.floot(seconds/60 - (hours*60)));
 		return hours..":"..mins
 	end
 end
