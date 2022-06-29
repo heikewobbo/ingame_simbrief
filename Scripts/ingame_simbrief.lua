@@ -61,7 +61,7 @@ function readXML()
 	local parser = xml2lua.parser(handler)
 	parser:parse(xfile)
 	
-	DataOFP{"Status"] = handler.root.OFP.fetch.status
+	DataOFP["Status"] = handler.root.OFP.fetch.status
 	
 	if DataOFP["Status"] ~= "Success" then
 		logMsf("XML status is not success")
